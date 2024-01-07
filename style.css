@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background: var(--cream-bg, #f2eae2);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  width: 343px;
+  border-radius: 10px;
+  background: white;
+}
+#mobile-photo {
+  width: 343px;
+  height: 240px;
+  border-radius: 10px 10px 0 0;
+}
+#desktop-photo {
+  display: none;
+}
+.content-box {
+  padding: 24px 24px 24px 25px;
+}
+#perfume {
+  color: var(--Aurometal-Saurus, #6c7289);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+.content-box h1 {
+  margin-top: 12px;
+  color: var(--Gunmetal, #1c232b);
+
+  font-family: Fraunces;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px; /* 100% */
+}
+#content-para {
+  margin-top: 16px;
+  color: var(--Aurometal-Saurus, #6c7289);
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23px; /* 164.286% */
+}
+.price {
+  margin-top: 24px;
+  display: flex;
+  gap: 19px;
+  align-items: center;
+}
+.price :first-child {
+  color: var(--Deep-Aquamarine, #3d8168);
+
+  font-family: Fraunces;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px; /* 100% */
+}
+.price :last-child {
+  color: var(--Aurometal-Saurus, #6c7289);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 23px;
+  text-decoration: line-through;
+}
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 11.61px;
+  width: 295px;
+  height: 48px;
+  border-radius: 8px;
+  background: var(--Deep-Aquamarine, #3d8168);
+  border: none;
+  /* Button Text */
+  color: var(--Pure-White, #fff);
+  font-size: 14px;
+  font-weight: 700;
+}
+@media only screen and (min-width: 1440px) {
+  main {
+    width: 600px;
+    flex-direction: row;
+  }
+  #mobile-photo {
+    display: none;
+  }
+  #desktop-photo {
+    display: flex;
+    width: 300px;
+    height: 450px;
+    border-radius: 10px 0 0 10px;
+  }
+  .content-box {
+    padding: 32px;
+  }
+  .content-box h1 {
+    width: 236px;
+    margin-top: 20px;
+  }
+  #content-para {
+    width: 237px;
+    margin-top: 24px;
+  }
+  .price {
+    margin-top: 29px;
+  }
+  button {
+    margin-top: 30px;
+    width: 236px;
+    cursor: pointer;
+  }
+  button:hover {
+    background: var(--deep-aquamarine-hover, #1a4032);
+    transition: 0.5s;
+  }
+}
